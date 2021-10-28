@@ -101,9 +101,10 @@ nav ul li img{
     overflow: hidden;
 }
 .slider{
-    width: 45vw;
-    height: 50vh;
+    width: 70vw;
+    height: 60vh;
     margin:20px;
+    display: inline-block;
 }
 .slider img{
     width: inherit;
@@ -111,86 +112,111 @@ nav ul li img{
     position: absolute;
 }
 .img1{
-    animation:slider1 30s linear;
+    animation:slider1 20s linear;
     animation-iteration-count: infinite;
 }
 @keyframes slider1{
     10%{
-        z-index: 99;
+        z-index: 97;
     }
     100%{
-        z-index: 99;
+        z-index: 97;
     }
 }
 .img2{
-    animation:slider2 30s linear;
+    animation:slider2 20s linear;
     animation-iteration-count: infinite;
 }
 @keyframes slider2{
     20%{
-        z-index: 99;
+        z-index: 97;
     }
 }
 .img3{
-    animation:slider3 30s linear;
+    animation:slider3 20s linear;
     animation-iteration-count: infinite;
 }
 @keyframes slider3{
     30%{
-        z-index: 99;
+        z-index: 97;
     }
 }
 .img4{
-    animation:slider4 30s linear;
+    animation:slider4 20s linear;
     animation-iteration-count: infinite;
 }
 @keyframes slider4{
     40%{
-        z-index: 99;
+        z-index: 97;
     }
 }
 .img5{
-    animation:slider5 30s linear;
+    animation:slider5 20s linear;
     animation-iteration-count: infinite;
 }
 @keyframes slider5{
     50%{
-        z-index: 99;
+        z-index: 97;
     }
 }
 .img6{
-    animation:slider6 30s linear;
+    animation:slider6 20s linear;
     animation-iteration-count: infinite;
 }
 @keyframes slider6{
     60%{
-        z-index: 99;
+        z-index: 97;
     }
 }
 .img7{
-    animation:slider7 30s linear;
+    animation:slider7 20s linear;
     animation-iteration-count: infinite;
 }
 @keyframes slider7{
     70%{
-        z-index: 99;
+        z-index: 97;
     }
 }
 .img8{
-    animation:slider8 30s linear;
+    animation:slider8 20s linear;
     animation-iteration-count: infinite;
 }
 @keyframes slider8{
     80%{
-        z-index: 99;
+        z-index: 97;
     }
 }
 .img9{
-    animation:slider9 30s linear;
+    animation:slider9 20s linear;
     animation-iteration-count: infinite;
 }
 @keyframes slider9{
     90%{
-        z-index: 99;
+        z-index: 97;
     }
+}
+main{
+    position: relative;
+}
+.left-arrow{
+    position: absolute;
+    top:25vh;
+    left:2vw;
+    z-index: -10;
+}
+.right-arrow{
+    position: absolute;
+    top:25vh;
+    left:40vw;
+    z-index: -10;
+}
+.slider:hover ~ .left-arrow,.slider:hover ~ .right-arrow,.right-arrow:hover,.left-arrow:hover~.right-arrow,.left-arrow:hover,.right-arrow:hover{
+    z-index: 99;
+}
+.lazyloaded{
+    width:10%;
+    display: inline-block;
+}
+.e{
+    display: inline-block;
 }
