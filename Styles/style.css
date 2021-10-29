@@ -68,6 +68,7 @@ nav ul li{
     top:100%;
     left:0%;
     background-color: #fff;
+    z-index: 100;
 }
 .help ul li{
     width: 80%;
@@ -86,7 +87,7 @@ nav ul li img{
 .nav3{
     width: fit-content;
     overflow: hidden;
-    height:50px;
+    height:fit-content;
 }
 .nav3 ul{
     width: 100%;
@@ -101,9 +102,10 @@ nav ul li img{
     overflow: hidden;
 }
 .slider{
-    width: 70vw;
+    width: 65.5vw;
     height: 60vh;
     margin:20px;
+    margin-right: 0px;
     display: inline-block;
 }
 .slider img{
@@ -207,16 +209,23 @@ main{
 .right-arrow{
     position: absolute;
     top:25vh;
-    left:40vw;
+    left:61vw;
     z-index: -10;
 }
 .slider:hover ~ .left-arrow,.slider:hover ~ .right-arrow,.right-arrow:hover,.left-arrow:hover~.right-arrow,.left-arrow:hover,.right-arrow:hover{
     z-index: 99;
 }
 .lazyloaded{
-    width:10%;
+    width:49%;
     display: inline-block;
 }
 .e{
     display: inline-block;
+}
+.cont{
+    display: flex;
+}
+.cont2{
+    margin:20px;
+    margin-right: 0px;
 }
