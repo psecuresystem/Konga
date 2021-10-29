@@ -244,9 +244,62 @@ main{
     justify-content: space-evenly;
 }
 .card{
-    width:12vw;
+    width:14.5vw;
+    margin: 0;
 }
 .ksf{
     width: 7vw;
     height: 7vh;
+}
+.c2{
+    background-color: #fff;
+    padding:1.5% 0 1.5% 0;
+    margin: 1.5%;
+    display: flex;
+    width: fit-content;
+    overflow: scroll;
+}
+.card2{
+    width: 12vw;
+    padding:1.9%;
+}
+.c3{
+    display: block;
+    padding: 1vh 0.2vw 1vh 0.4vw;
+}
+.c3 h3{
+    margin: 0;
+    padding:1vw;
+    border-bottom: 1px solid black;
+}
+span{
+    text-decoration: line-through;
+    text-decoration-style: double;
+}
+h5{
+    color:rgb(51, 178, 123);
+}
+.svg{
+    position: absolute;
+    top:2vh;
+    left:97vw;
+}
+.advert{
+    height: 10vh;
+    width: 98vw;
+    display: block;
+}
+#advert:target{
+    display: none;
+}
+#advert:target + .sv{
+    display: none;
+}
+.card3{
+    transition: box-shadow 1s;
+    margin:1.5vw;
+    border-radius: 5px;
+}
+.card3:hover{
+    box-shadow: 0 0 1px rgb(43, 42, 42);
 }
