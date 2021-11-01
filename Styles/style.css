@@ -18,7 +18,7 @@ nav ul li{
 }
 .nav2{
     background-color: rgb(237, 1, 127);
-    height: 80px;
+    height: 10vh;
 }
 .nav2 ul{
     display: flex;
@@ -34,7 +34,7 @@ nav ul li{
     display: grid;
     place-items: center;
 }
-.nav2 ul li:hover{
+.nav2 ul li:hover,.nav3 ul li:hover{
     background-color: #fff;
 }
 .nav2 ul div{
@@ -90,23 +90,22 @@ nav ul li img{
     height:20px;
 }
 .nav3{
-    width: fit-content;
     overflow: hidden;
-    height:fit-content;
+    display: flex;
     background-color: rgb(148, 0, 79);
 }
 .nav3 ul{
-    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     list-style: none;
-    align-items: center;
+    /* align-items: center; */
     overflow: hidden;
 }
-.nav3 ul li{
-    width: 100%;
-    overflow: hidden;
+.nav3 li{
+    padding:0.5vw;
+    display: flex;
+    align-items: center;
 }
 .slider{
     width: 65.5vw;
@@ -130,6 +129,9 @@ nav ul li img{
     10%{
         z-index: 97;
     }
+    20%{
+        z-index:96;
+    }
     100%{
         z-index: 97;
     }
@@ -142,6 +144,9 @@ nav ul li img{
     20%{
         z-index: 97;
     }
+    30%{
+        z-index:96;
+    }
 }
 .img3{
     animation:slider3 20s linear;
@@ -150,6 +155,9 @@ nav ul li img{
 @keyframes slider3{
     30%{
         z-index: 97;
+    }
+    40%{
+        z-index:96;
     }
 }
 .img4{
@@ -160,6 +168,9 @@ nav ul li img{
     40%{
         z-index: 97;
     }
+    50%{
+        z-index:96;
+    }
 }
 .img5{
     animation:slider5 20s linear;
@@ -168,6 +179,9 @@ nav ul li img{
 @keyframes slider5{
     50%{
         z-index: 97;
+    }
+    60%{
+        z-index:96;
     }
 }
 .img6{
@@ -178,6 +192,9 @@ nav ul li img{
     60%{
         z-index: 97;
     }
+    70%{
+        z-index:96;
+    }
 }
 .img7{
     animation:slider7 20s linear;
@@ -186,6 +203,9 @@ nav ul li img{
 @keyframes slider7{
     70%{
         z-index: 97;
+    }
+    80%{
+        z-index:96;
     }
 }
 .img8{
@@ -196,6 +216,9 @@ nav ul li img{
     80%{
         z-index: 97;
     }
+    90%{
+        z-index:96;
+    }
 }
 .img9{
     animation:slider9 20s linear;
@@ -204,6 +227,9 @@ nav ul li img{
 @keyframes slider9{
     90%{
         z-index: 97;
+    }
+    100%{
+        z-index:96;
     }
 }
 main{
@@ -302,4 +328,292 @@ h5{
 }
 .card3:hover{
     box-shadow: 0 0 1px rgb(43, 42, 42);
+}
+.circle{
+    position: absolute;
+    z-index: 98;
+    width: 50px;
+    height: 50px;
+}
+.full{
+    width: 100%;
+}
+.parent{
+    display: flex;
+    justify-content: space-evenly;
+}
+.half{
+    width:48%;
+    border-radius: 1vw;
+}
+.ads{
+    width:95%;
+    border-radius: 1vw;
+}
+.shop{
+    color:rgb(139, 5, 77);
+}
+.desc{
+    color:rgb(90, 95, 102);
+    font-size: 18px;
+    font-weight: 700;
+}
+.circle{
+    position: absolute;
+    width: 1vw;
+    height: 1vw;
+    background-color: rgb(121, 124, 129);
+    display: inline-block;
+    transform: translateY(52vh);
+    z-index: 98;
+    margin: 1.5em;
+    border-radius: 50%;
+    left:20vw;
+    animation:circle1 20s linear;
+    animation-iteration-count: infinite;
+}
+@keyframes circle1 {
+    10%{
+        background-color: #fff;
+    }
+    20%{
+        background-color: rgb(121, 124, 129);
+    }
+}
+.circle:hover{
+    background-color: #fff;
+}
+.circle2{
+    transform: translate(2em,52vh);
+    animation:circle2 20s linear;
+    animation-iteration-count: infinite;
+}
+@keyframes circle2 {
+    20%{
+        background-color: #fff;
+    }
+    30%{
+        background-color: rgb(121, 124, 129);
+    }
+}
+.circle3{
+    transform: translate(4em,52vh);
+    animation:circle3 20s linear;
+    animation-iteration-count: infinite;
+}
+@keyframes circle3 {
+    30%{
+        background-color: #fff;
+    }
+    40%{
+        background-color: rgb(121, 124, 129);
+    }
+}
+.circle4{
+    transform: translate(6em,52vh);
+    animation:circle4 20s linear;
+    animation-iteration-count: infinite;
+}
+@keyframes circle4 {
+    40%{
+        background-color: #fff;
+    }
+    50%{
+        background-color: rgb(121, 124, 129);
+    }
+}
+.circle5{
+    transform: translate(8em,52vh);
+    animation:circle5 20s linear;
+    animation-iteration-count: infinite;
+}
+@keyframes circle5 {
+    50%{
+        background-color: #fff;
+    }
+    60%{
+        background-color: rgb(121, 124, 129);
+    }
+}
+.circle6{
+    transform: translate(10em,52vh);
+    animation:circle6 20s linear;
+    animation-iteration-count: infinite;
+}
+@keyframes circle6 {
+    60%{
+        background-color: #fff;
+    }
+    70%{
+        background-color: rgb(121, 124, 129);
+    }
+}
+.circle7{
+    transform: translate(12em,52vh);
+    animation:circle7 20s linear;
+    animation-iteration-count: infinite;
+}
+@keyframes circle7 {
+    70%{
+        background-color: #fff;
+    }
+    80%{
+        background-color: rgb(121, 124, 129);
+    }
+}
+.circle8{
+    transform: translate(14em,52vh);
+    animation: circle8 20s linear;
+    animation-iteration-count: infinite;
+}
+@keyframes circle8 {
+    80%{
+        background-color: #fff;
+    }
+    90%{
+        background-color: rgb(121, 124, 129);
+    }
+}
+.circle9{
+    transform: translate(16em,52vh);
+    animation:circle9 20s linear;
+    animation-iteration-count: infinite;
+}
+@keyframes circle9 {
+    90%{
+        background-color: #fff;
+    }
+    100%{
+        background-color: rgb(121, 124, 129);
+    }
+}
+.c4{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+.c4 img{
+    width: 100%;
+    height: 20vh;
+}
+.c5{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.c5 h3{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.deals{
+    display: flex;
+}
+.c5 h3{
+    display: block;
+}
+.deals img{
+    width: 40%;
+    height: 10vh;
+}
+.deals div{
+    display: flex;
+    flex-direction: column;
+}
+.deals p,.deals h2,.deals h5{
+    margin:1vh;
+}
+.deals{
+    margin-top: 3vh;
+    transition: border 2s;
+    margin:3vh;
+    padding:3vh;
+}
+.deals:hover{
+    border:0.5px solid rgb(80, 78, 78);
+    border-radius:1vh;
+}
+.div1{
+    background-color: rgb(46, 46, 46);
+    color:rgb(181, 181, 181);
+    display: flex;
+    padding-top:1vw;
+    padding-bottom: 1vw;
+}
+.div1 > div{
+    display: flex;
+    align-items: center;
+    width: 12vw;
+    margin-right:3vw;
+    margin-left:3vw;
+}
+.div1 div div{
+    display: flex;
+    flex-direction: column;
+}
+.div1 div div p{
+    margin: 0.5vh;
+}
+.div1 div svg{
+    margin-right: 1vh;
+}
+.div1 div input,.div1 div button{
+    height: 7vh;
+    transform: translateX(-1vh);
+    text-align: center;
+}
+.div1 div button{
+    background-color: rgb(237, 1, 127);
+    outline: none;
+    border: none;
+    height: 8vh;
+}
+.form{
+    width: 25vw;
+}
+.foot{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(12, 12, 12);
+    color: #fff;
+}
+.foot ul{
+    list-style: none;
+}
+.download > div{
+    background-color: black;
+    width: 15vw;
+    height: 8vh;
+    margin:0.9vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.download div p{
+    margin: 0.5vh;
+}
+.download{
+    display: flex;
+}
+.cdiv{
+    display: flex;
+    justify-content: space-evenly;
+}
+.connect{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+@media screen and (max-width:850px) {
+    .cont{
+        display: block;
+    }
+    .slider{
+        width: 93%;
+    }
+    .lazyloaded{
+        width: 46vw;
+    }
+    .right-arrow{
+        left:80vw;
+    }
+    .deals{
+        flex-direction: column;
+    }
 }
